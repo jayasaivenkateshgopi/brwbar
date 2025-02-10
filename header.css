@@ -1,0 +1,19 @@
+header *{ text-decoration: none !important;}
+header{ z-index: 9999 !important; }
+.logo p{    margin: 0 !important; font-family: "Oswald", serif; line-height: 1;}
+.logo p:first-child{    font-size: 2.5rem; }
+.logo.position-absolute{    top: 0.9rem; left: 1.5rem; z-index: 999;}
+
+header nav a{ font-size: 1rem; }
+
+.mob-nav summary {    list-style-type: none;  z-index: 999; position: relative;} 
+.mob-nav summary::before{   content: '\f0c9'; font-family: fontawesome; }
+.mob-nav details[open] > summary::before{   content: '\f00d'; font-family: fontawesome; }
+
+.mob-nav ul{    list-style: none; z-index: 998; height: 100vh !important;   background: #ffffffdd;}
+
+
+@media (width <= 768px){
+    .logo{  transform: scale(0.7);}
+    .logo.position-absolute{    top: 0rem; left: 0rem }
+}
