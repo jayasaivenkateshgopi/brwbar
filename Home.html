@@ -55,7 +55,7 @@
     <!-- Home Page content Starts Here -->
     <main>
         <!-- Intro section starts here -->
-        <div class="intro d-flex">
+        <div class="intro d-flex d-none">
             <div class="left position-relative">
                 <img src="https://static.wixstatic.com/media/d99169_4713498713044ad7bf124ab3d6b0c51c~mv2_d_3840_5760_s_4_2.jpg/v1/crop/x_0,y_670,w_3840,h_2792/fill/w_847,h_608,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d99169_4713498713044ad7bf124ab3d6b0c51c~mv2_d_3840_5760_s_4_2.jpg" class=" position-absolute">
                 <img src="assets/stripe.svg" class="position-absolute">
@@ -69,7 +69,7 @@
         </div>
 
         <!-- our story starts here -->
-        <div class="our-story d-flex mt-4 row">
+        <div class="our-story d-flex mt-4 row d-none">
             <div class="left">
                 <img src="https://static.wixstatic.com/media/d99169_1300b7dd14f442f6b846edc8d2783750~mv2_d_5760_3840_s_4_2.jpg/v1/crop/x_1247,y_658,w_3942,h_2633/fill/w_655,h_425,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/d99169_1300b7dd14f442f6b846edc8d2783750~mv2_d_5760_3840_s_4_2.jpg">
             </div>
@@ -83,13 +83,83 @@
             </div>
         </div>
 
+        <!-- Service section starts here -->
+        <div class="service container-sm">
+            <div class="brush-graph service m-0 ms-sm-5 p-o ps-sm-5"><img src="assets/brush2.svg"></div>
+            <div class="moretemp d-flex justify-content-between">
+                <div class="title title-font">BRW's #1 SERVICE</div>
+                <a href="#">More Templete </a>
+            </div>
+        </div>
+
         <!-- Follow -->
-        <div class="followus container mt-5"> 
-            <div class="title">follow us</div> @brwbar
+        <div class="followus container-fluid mt-5"> 
+            <div class="title-font text-dark container-sm"><span class="title d-inline-block text-dark m-0 ms-sm-5 p-0 ps-sm-5">follow us</span> @brwbar</div>
+            <div class="d-flex row flex-nowrap slider gap-3 mt-5 mt-md-3 mx-3">
+                <div class="col-12 col-sm-6 col-md-3 slide-block">
+                    <img src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Brow_Bar/01.jpg">
+                    <div class="hover-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 slide-block">
+                    <img src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Brow_Bar/02.jpg">
+                    <div class="hover-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 slide-block">
+                    <img src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Brow_Bar/03.jpg">
+                    <div class="hover-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 slide-block">
+                    <img src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Brow_Bar/04.jpg">
+                    <div class="hover-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 slide-block">
+                    <img src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Brow_Bar/01.jpg">
+                    <div class="hover-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 slide-block">
+                    <img src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Brow_Bar/02.jpg">
+                    <div class="hover-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 slide-block">
+                    <img src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Brow_Bar/03.jpg">
+                    <div class="hover-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 slide-block">
+                    <img src="https://wixmp-19e700b7666f74a00729a0dd.wixmp.com/Instagram/Brow_Bar/04.jpg">
+                    <div class="hover-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                </div>
+                <script>
+                const slider = document.querySelector('.slider');
+                    let mouseDown = false;
+                    let startX, scrollLeft;
+                    
+                    slider.addEventListener('mousedown', (e) => {
+                      mouseDown = true;
+                      startX = e.pageX - slider.offsetLeft;
+                      scrollLeft = slider.scrollLeft;
+                    });
+                    
+                    slider.addEventListener('mouseleave', () => {
+                      mouseDown = false;
+                    });
+                    
+                    slider.addEventListener('mouseup', () => {
+                      mouseDown = false;
+                    });
+                    
+                    slider.addEventListener('mousemove', (e) => {
+                      if (!mouseDown) return;
+                      e.preventDefault();
+                      const x = e.pageX - slider.offsetLeft;
+                      const scroll = x - startX;
+                      slider.scrollLeft = scrollLeft - scroll;
+                    });
+                </script>
+            </div>
         </div>
 
         <!-- Contact Us & Footer-->
-        <div class="contactus mt-5 row d-flex flex-wrap px-sm-5 py-3">
+        <div class="container-sm contactus mt-5 row d-flex flex-wrap px-sm-5 py-3">
             <div class="sec-title col-12 d-flex justify-content-between align-items-center py-3 px-5 flex-column flex-sm-row">
                 <div class="title">CONTACT</div>
                 <div class="book"><a href="#" target="_blank" rel="noopener noreferrer">Book an Appointment Online</i></a></div>

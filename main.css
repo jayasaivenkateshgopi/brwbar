@@ -20,12 +20,15 @@ body{ overflow-x: hidden; }
 .our-story .left img{ width: clamp(500px, 70vw, 650px); scale: 0.8; margin-left: clamp(10%, 15vw, 30%); }
 .os-content{    width: 350px; margin-left: 8rem;}
 
-.followus .title{   color: initial; }
+.service{   margin-top: 180px !important; }
 
 
-@media (width<=1440px){
-
-}
+.followus .title-font::after{ content: '\ea2a'; font-family: var(--f-lineicons); display: inline-block; vertical-align: middle;  margin-left: 5px; }
+.followus .slider{  overflow-x: scroll; scroll-behavior: smooth; scrollbar-width: none; overflow-y: hidden; }
+.followus .slide-block{ width: clamp(15rem, 25vw, 25rem); height: clamp(15rem, 25vw, 25rem); background: lightgrey; padding: 0; position: relative; }
+.followus .slide-block img{ object-fit: cover; width: 100%;}
+.followus .slide-block:is(:hover, :active, :focus){ & .hover-content{ display: flex; align-items: center; }  }
+.followus .slide-block .hover-content{  position: absolute; top: 0; font-size: clamp(12px, 1vw, 14px); text-align: center; height: 100%; padding: 0 1rem; background: #000000aa; color: white; display: none; }
 
 @media (width <= 768px){
     .intro .main-text{  left: -60%; top: 50%;}

@@ -1,5 +1,13 @@
-header *{ text-decoration: none !important;}
 header{ z-index: 9999 !important; }
+header *{ text-decoration: none !important;}
+
+:root{
+    --f-oswald: "Oswald", serif !important;
+    --f-lineicons: Lineicons;
+}
+
+.title-font{    font-family: var(--f-oswald) }
+
 .logo p{    margin: 0 !important; font-family: "Oswald", serif; line-height: 1;}
 .logo p:first-child{    font-size: 2.5rem; }
 .logo.position-absolute{    top: 0.9rem; left: 1.5rem; z-index: 999;}
@@ -14,6 +22,6 @@ header nav a{ font-size: 1rem; }
 
 
 @media (width <= 768px){
-    .logo{  transform: scale(0.7);}
+    .logo{  transform: scale(0.7); }
     .logo.position-absolute{    top: 0rem; left: 0rem }
 }
