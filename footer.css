@@ -1,15 +1,11 @@
-.contactus{ background: #212121; color: #bbb; margin: auto; }
+.contactus{ background: var(--bg-dark); color: #bbb; margin: auto; }
 
 .contactus a, form input:last-child{ color: #7ab0a3; text-decoration: none; border: none !important; text-align: right; }
 
-/* Titles */
-.contactus .title, .followus .title{ font-family: "Oswald", serif; text-transform: uppercase; }
-.sec-title .title, .followus .title{  color: white; font-size: clamp(30px, 2vw, 34px);}
-.details .title{ font-size: clamp(20px, 2vw, 22px); }
 
 /* Sec title */
-.sec-title a,form input:last-child{ font-weight: 600;   font-size: clamp(12px, 1vw, 16px); }
-.book a::after{  content: '\ea2a'; font-family: Lineicons; display: inline-block; vertical-align: middle; margin-left: 5px; color: inherit; }
+.sec-title a,form input:last-child, .service .moretemp a{ font-weight: 600;   font-size: clamp(12px, 1vw, 16px); }
+.book a::after, .service .moretemp a::after{  content: '\ea2a'; font-family: Lineicons; display: inline-block; vertical-align: middle; margin-left: 5px; color: inherit; }
 
 /* Details */
 .details *{ flex-basis: 40%; flex-grow: 1; flex-shrink: 1; color: #bbb !important; }

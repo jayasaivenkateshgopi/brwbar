@@ -1,35 +1,49 @@
-*{  box-sizing: border-box; font-family: "Wix Madefor Display", serif; }
-
 body{ overflow-x: hidden; }
+
+/* Titles */
+.title{ line-height: 1 !important; }
+.contactus .title, .followus .title, .service .title{ font-family: var(--f-oswald); text-transform: uppercase; }
+.sec-title .title, .followus .title, .service .title{ color: white; font-size: clamp(30px, 2vw, 34px); }
+.details .title{ font-size: clamp(20px, 2vw, 22px); }
+
+
 /* Main Page Styling */
 
-.intro, .our-story{    height: 47rem; margin-top: 5rem;    & .right,.left{ height: 100%; flex: 1;} }
+.intro, .our-story{ height: 47rem; margin-top: 5rem; & .right,.left{ height: 100%; flex: 1;} }
 .intro .left img:first-child, .our-story .left img:first-child{ width: clamp(500px, 70vw, 800px); top: 4rem; left: 20rem; border: 0.8rem solid white; z-index: 10;}
 .intro .left img:last-child{ width: clamp(500px, 50vw, 800px); top: 35rem; left: 5%; z-index: 11; }
 
-.intro .right{  background: #ccdbc6;    }
+.intro .right{ background: #ccdbc6; }
 .intro .main-text{ width: clamp(260px, 50vw, 350px); border: 0.8rem solid white;   background: #e8e6e7; top: 25%; left: 4.5rem; z-index: 11; padding-right: 5rem !important; }
 .intro .main-text h2{ font-family: "Oswald", serif; font-weight: 400; font-size: clamp(28px, 5vw, 40px); line-height: 1.3; & span { font-family: "Oswald", serif; font-weight: 400; } }
-.intro .main-text a{    text-decoration: none; font-size: 12px; }
-.intro .main-text a::after{ content: '→'; font-size: 25px;  vertical-align: top; line-height: 1; margin-left: 0.8rem;}
+.intro .main-text a{ text-decoration: none; font-size: 12px; }
+.intro .main-text a::after{ content: '→'; font-size: 25px;  vertical-align: top; line-height: 1; margin-left: 0.8rem; }
 
 
 
 .our-story > *{ flex: 1; }
-.our-story .left{   background: #e8e6e7; }
+.our-story .left{ background: #e8e6e7; }
 .our-story .left img{ width: clamp(500px, 70vw, 650px); scale: 0.8; margin-left: clamp(10%, 15vw, 30%); }
-.os-content{    width: 350px; margin-left: 8rem;}
+.os-content{ width: 350px; margin-left: 8rem; }
 
-.service{   margin-top: 180px !important; }
+
+.service{ margin-top: 180px !important; }
+.service .moretemp{ height: 25vh; }
+.service .moretemp a{ border-color: var(--clr-green) !important; }
+.service .moretemp a::after{ margin-left: 25px; }
+/* ------------------- */
+.booking-sec{ margin-top: -230px}
+.booking-sec [class*=sec] .title{ border-bottom: 2px solid #bbb; }
+
 
 
 .followus .title-font::after{ content: '\ea2a'; font-family: var(--f-lineicons); display: inline-block; vertical-align: middle;  margin-left: 5px; }
-.followus .slider{  overflow-x: scroll; scroll-behavior: smooth; scrollbar-width: none; overflow-y: hidden; }
+.followus .slider{ overflow-x: scroll; scroll-behavior: smooth; scrollbar-width: none; overflow-y: hidden; }
 .followus .slide-block{ width: clamp(15rem, 25vw, 25rem); height: clamp(15rem, 25vw, 25rem); background: lightgrey; padding: 0; position: relative; }
-.followus .slide-block img{ object-fit: cover; width: 100%;}
-.followus .slide-block:is(:hover, :active, :focus){ & .hover-content{ display: flex; align-items: center; }  }
-.followus .slide-block .hover-content{  position: absolute; top: 0; font-size: clamp(12px, 1vw, 14px); text-align: center; height: 100%; padding: 0 1rem; background: #000000aa; color: white; display: none; }
+.followus .slide-block img{ object-fit: cover; width: 100%; }
+.followus .slide-block:is(:hover, :active, :focus){ & .hover-content{ display: flex; align-items: center; } }
+.followus .slide-block .hover-content{ position: absolute; top: 0; font-size: clamp(12px, 1vw, 14px); text-align: center; height: 100%; padding: 0 1rem; background: #000000aa; color: white; display: none; }
 
 @media (width <= 768px){
-    .intro .main-text{  left: -60%; top: 50%;}
+    .intro .main-text{ left: -60%; top: 50%; }
 }
