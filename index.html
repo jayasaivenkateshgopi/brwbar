@@ -85,30 +85,107 @@
 
         <!-- Service section starts here -->
         <div class="service container-sm pb-5 d-flex flex-column">
+            <!-- Brush graphic section -->
             <div class="brush-graph service m-0 ms-sm-5 p-0 ps-sm-5"><img src="assets/brush2.svg"></div>
+
+            <!-- Service title section with dark background -->
             <section class="inner-container pt-5 bg-dark">
+                <!-- Title and "More Template" button container -->
                 <div class="moretemp d-flex px-2 px-sm-5 flex-column align-items-center align-items-sm-start flex-sm-row pt-sm-0 justify-content-sm-between">
                     <div class="title title-font text-white m-0 ms-sm-5">BRW's #1 SERVICE</div>
                     <a href="#" class="m-0 me-sm-5 d-inline-block verticle-align-center border border-3 p-2 px-3 clr-green text-decor-none">More Templete </a>
                 </div>
             </section>
+
+            <!-- Booking section with 3 columns -->
             <div class="booking-sec mx-5 w-100 align-self-center">
-                <div class="inner-container mx-5 px-3 bg-light d-flex">
+                <div class="inner-container mx-5 px-3 bg-light d-flex align-items-start">
+                    <!-- Column 1: Date/Time Selection -->
                     <div class="sec1 py-5 flex-grow-1 d-flex flex-column justify-content-start">
                         <div class="title text-dark pb-3 flex-grow-1">Select a Date and Time</div>
-                        <div class="content"></div>
+                        <div class="calendar-wrapper content">
+                            <div class="calendar-header d-flex justify-content-between align-items-center mb-3">
+                                <button class="prev-month border-0 bg-transparent"><i class="lni lni-chevron-left"></i></button>
+                                <h5 class="current-month m-0">January 2024</h5>
+                                <button class="next-month border-0 bg-transparent" style="transform: rotateY(180deg)"><i class="lni lni-chevron-left"></i></button>
+                            </div>
+                            <div class="calendar-body">
+                                <div class="calendar-weekdays d-flex justify-content-between mb-2">
+                                    <div class="weekday">Sun</div>
+                                    <div class="weekday">Mon</div>
+                                    <div class="weekday">Tue</div>
+                                    <div class="weekday">Wed</div>
+                                    <div class="weekday">Thu</div>
+                                    <div class="weekday">Fri</div>
+                                    <div class="weekday">Sat</div>
+                                </div>
+                                <div class="calendar-dates">
+                                    <div class="week-one d-flex justify-content-between">
+                                        <div class="date disabled">31</div>
+                                        <div class="date">1</div>
+                                        <div class="date">2</div>
+                                        <div class="date">3</div>
+                                        <div class="date">4</div>
+                                        <div class="date">5</div>
+                                        <div class="date">6</div>
+                                    </div>
+                                    <div class="week-two d-flex justify-content-between">
+                                        <div class="date">7</div>
+                                        <div class="date">8</div>
+                                        <div class="date">9</div>
+                                        <div class="date">10</div>
+                                        <div class="date">11</div>
+                                        <div class="date">12</div>
+                                        <div class="date">13</div>
+                                    </div>
+                                    <div class="week-three d-flex justify-content-between">
+                                        <div class="date">14</div>
+                                        <div class="date">15</div>
+                                        <div class="date">16</div>
+                                        <div class="date">17</div>
+                                        <div class="date">18</div>
+                                        <div class="date">19</div>
+                                        <div class="date">20</div>
+                                    </div>
+                                    <div class="week-four d-flex justify-content-between">
+                                        <div class="date">21</div>
+                                        <div class="date">22</div>
+                                        <div class="date">23</div>
+                                        <div class="date">24</div>
+                                        <div class="date">25</div>
+                                        <div class="date">26</div>
+                                        <div class="date">27</div>
+                                    </div>
+                                    <div class="week-five d-flex justify-content-between">
+                                        <div class="date">28</div>
+                                        <div class="date">29</div>
+                                        <div class="date">30</div>
+                                        <div class="date">31</div>
+                                        <div class="date disabled">1</div>
+                                        <div class="date disabled">2</div>
+                                        <div class="date disabled">3</div>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Column 2: Timezone Selection -->
                     <div class="sec2 py-5 flex-grow-1 d-flex flex-column">
                         <div class="title text-dark nrml-title-font py-3 flex-grow-1">Timezone: Pacific Standard Time (PST) <i class="lni lni-chevron-down align-bottom"></i></div>
                         <div class="content">
+                            <!-- Availability information -->
                             <div class="date">Thursday, January 30</div>
                             <div class="availability">No Availability</div>
                             <div class="button">Check Next Availability</div>
                         </div>
                     </div>
+
+                    <!-- Column 3: Service Details -->
                     <div class="sec3 py-5 flex-grow-1 d-flex flex-column">
                         <div class="title text-dark nrml-title-font py-3 flex-grow-1">Service Details <i class="lni lni-chevron-down align-bottom"></i></div>
                         <div class="content">
+                            <!-- Service pricing and type information -->
                             <div class="service-type">BRW Custom Shaping</div>
                             <div class="charges">$ 30</div>
                             <div class="button">Next</div>
